@@ -1,11 +1,9 @@
 var apiKey = '9HbwToTX9k46LR0QlaUrJN816UYtC485IPoRTrNq';
 //access.control.allow.origin=* ;
-window.onload = function(){
-  document.getElementById('search').value = '';
-}
 $(document).ready(function(){
   $('#searchBtn').click(function(e){
     e.preventDefault();
+    $('#footer').css({'position' : 'static'});
     var food = document.getElementById('search').value;
     //alert(city);
     var myurl = 'https://api.nal.usda.gov/ndb/search/?format=json&q=' + food + '&sort=n&max=25&offset=0&api_key=' + apiKey;
@@ -91,6 +89,8 @@ $(document).ready(function(){
   $('#Reset').click(function(){
       document.getElementById('search').value = '';
       $('#results').empty();
+      $('#foodInfo').empty();
+      $('#footer').css({'position' : 'absolute'});
   });
 });
 function getFoodReport(array){
