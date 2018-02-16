@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <title>Food Information</title>
+    <link rel="stylesheet" href="/styles.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+  </head>
+  <body>
+    <nav class="navbar navbar-toggleable-md navbar-light bg-faded">
+      <div class = "container-fluid">
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+              <a class="navbar-brand">Food Report<span class="sr-only">(current)</span></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class = 'search-form'>
+      <div></div>
+      <div class = 'form-wrapper'>
+        <form>
+          <div>
+            <label for="search"></label>
+            <input type="text" id="search" name="search" autocomplete="off"
+            value="Enter your food here"
+            onfocus="if(this.value==this.defaultValue)this.value='';"
+            onblur="if(this.value=='')this.value=this.defaultValue;"/>
+          </div>
+          <div class = "buttonPadding">
+            <div class="button" id = "searchBtn">
+              <input type="submit" value="Search">
+            </div>
+            <div class="button" id = "Reset">
+              <input type="reset" value="Reset">
+            </div>
+          </div>
+        </form>
+      </div>
+      <div></div>
+    </div>
+    <div class = 'results-wrapper'>
+      <div></div>
+      <div id = 'results'>
+      </div>
+      <div></div>
+    </div>
+    <div class = 'foodInfo-wrapper'>
+      <div></div>
+      <div id = 'foodInfo'>
+      </div>
+      <div></div>
+    </div>
+    <div class="footer">
+      <a class='btn' href="https://github.com/BYU-CS260-Winter-2018/lab-1-mjbriggs.git">
+        <i class="fab fa-github fa-4x"></i>
+      </a>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script text = 'type/javascript' src = '/script.js'></script>
+  </body>
+</html>
